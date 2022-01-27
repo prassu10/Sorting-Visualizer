@@ -3,7 +3,7 @@
 - Still a work in progress
 
 Use these steps to run the project:<br><br>
-:git clone https://github.com/Debasis56/Sorting-Visualizer<br><br>
+:git clone https://github.com/prassu10/Sorting-Visualizer<br><br>
 :npm install (after navigating inside the directory)<br><br>
 :npm fix audit<br><br>
 :npm start<br><br>
