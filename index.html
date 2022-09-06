@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sorting Visualizer</title>
+    
+    
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href = "#">Sorting Visualizer</a>
+        <a href = "#">Source Code</a>
+    </nav>
+
+    <div id="sorting" class="display"></div>
+
+
+    <div class="range-input" id="input-panel">
+        <div id="size" class = "label">Size :
+            <input id ="size_input" type="range" value=50 min="10" max="150" style="margin-left: 45px;">
+        </div>
+        <div id="speed" class = "label">Speed :
+            <input id="speed_input" type="range" min="20" max="300" value=60 style="margin-left: 60px;">
+        </div>
+    </div>
+
+    <div class=" center">
+        <div>
+            <button type="button" class="btn new">Randomize</button>
+            <button type="button" class="btn stop" disabled="true">Stop Sorting</button>
+        </div>
+        <div>
+            <button type="button" class="btn bubbleSort">Bubble Sort</button>
+            <button type="button" class="btn selectionSort">Selection Sort</button>
+            <button type="button" class="btn insertionSort">Insertion Sort</button>
+            <button type="button" class="btn mergeSort">Merge Sort</button>
+            <button type="button" class="btn quickSort">Quick Sort</button>
+            <button type="button" class="btn heapSort">Heap Sort</button>
+        </div>
+    </div>
+
+    <script src="sorting.js" async defer></script>
+    <script src="algorithms/bubbleSort.js" async defer></script>
+    <script src="algorithms/mergeSort.js" async defer></script>
+    <script src="algorithms/selectionSort.js" async defer></script>
+    <script src="algorithms/quickSort.js" async defer></script>
+    <script src="algorithms/insertionSort.js" async defer></script>
+    <script src="algorithms/heapSort.js" async defer></script>
+</body>
+
+</html>

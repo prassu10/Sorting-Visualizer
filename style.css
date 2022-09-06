@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Nunito';
+}
+
+body {
+    background-color: #162447;
+}
+
+.navbar {
+    background-color: #1b1b2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar a{
+    color: crimson;
+    font-size: 1.3rem;
+}
+
+.navbar a:hover{
+    color: turquoise;
+}
+
+.display{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 470px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item {
+    background: crimson;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+
+#sorting {
+    margin-bottom: 30px;
+    transform: rotate(180deg) scaleX(-1); 
+}
+
+.range-input {
+    transform: translate(0%);
+    line-height: 50px;
+    margin-left: -15rem;
+    display: flex;
+}
+.range-input input {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 2px;
+    background-color: crimson;
+    position: absolute;
+    top: 50%;
+}
+.range-input input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: turquoise;
+    border: 2px solid #22589a;
+    border-radius: 50%;
+    outline: none;
+}
+.range-input input::-webkit-slider-thumb:hover {
+    background-color: #1f4068;
+}
+
+.range-input .label{
+    color: turquoise;
+    font-weight:600;
+    display: flex; 
+    height: 35px; 
+    line-height: 35px; 
+    margin: auto;
+    text-align: center;
+}
+
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.center div{
+    margin: 1rem 0;
+}
+
+.center div .btn{
+    padding: 6px 8px;
+    margin: .5rem 5px;
+    background: none;
+    border: 2px solid turquoise;
+    color: turquoise;
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.center div .btn:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.center div .btn:enabled:hover{
+    color: black;
+    background: turquoise;
+}
+
+.center div .new{
+    border: 2px solid greenyellow;
+    color: greenyellow;
+}
+
+.center div .new:enabled:hover{
+    background: greenyellow;
+    color: black;
+}
+
+.center div .stop{
+    border: 2px solid crimson;
+    color: crimson;
+}
+
+.center div .stop:enabled:hover{
+    color: black;
+    background: crimson;
+}
