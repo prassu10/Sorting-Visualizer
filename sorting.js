@@ -11,18 +11,14 @@ function disableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = true;
     document.querySelector(".selectionSort").disabled = true;
     document.querySelector(".insertionSort").disabled = true;
-    document.querySelector(".mergeSort").disabled = true;
     document.querySelector(".quickSort").disabled = true;
-    document.querySelector(".heapSort").disabled = true;
 }
 
 function enableSortingBtn(){
     document.querySelector(".bubbleSort").disabled = false;
     document.querySelector(".selectionSort").disabled = false;
     document.querySelector(".insertionSort").disabled = false;
-    document.querySelector(".mergeSort").disabled = false;
     document.querySelector(".quickSort").disabled = false;
-    document.querySelector(".heapSort").disabled = false;
 }
 
 
